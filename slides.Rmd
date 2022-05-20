@@ -23,6 +23,12 @@ xaringanExtra::use_freezeframe(responsive = FALSE,overlay = TRUE)
 
 ```{r xaringan-tile-view, echo=FALSE}
 xaringanExtra::use_tile_view()
+
+
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
 ```
 
 ```{r setup, include=FALSE}
