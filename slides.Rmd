@@ -47,18 +47,26 @@ img_path <- here('imgs')
 
 
 I study...
+  
   - Fisheries assessment and management
+  
   - Social-ecological impacts of policies
+  
   - Predictive modeling
   
 Using ...
+ 
   - Bayesian methods
+ 
   - Econometrics
+ 
   - Simulation modeling
-  - Open and reproducible data science
-  - Collaboration
+ 
+  - Open and reproducible science
 
 --
+<br>
+<br>
 .center[**An Optimistic Skeptic**]
 
 
@@ -376,7 +384,7 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 # Additional Data Helps Individual Fisheries
 
 --
-.center[![:scale 70%](`r file.path(img_path,"ex_scatter.png")`)]
+.center[![:scale 80%](`r file.path(img_path,"ex_scatter.png")`)]
 
 .right[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12593)]
 
@@ -406,10 +414,10 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 
 ---
 
-# Error-Prone and Biased Results
+# 
 
 
-.center[![:scale 100%](imgs/error-and-bias.png)]
+.top[.center[![:scale 100%](imgs/error-and-bias.png)]]
 
 
 ???
@@ -419,11 +427,9 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 
 # How Can We Improve?
 
-If catches alone aren't informative, what should we add on?
-
 --
 
-.center[![:scale 70%](`r file.path(img_path,"voi.jpg")`)]
+.center[![:scale 80%](`r file.path(img_path,"voi.jpg")`)]
 
 .right[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12593)]
 ---
@@ -733,23 +739,28 @@ class: center, middle, inverse
 
 .pull-left[
 
-- Fisheries management has had successes
-
 - Bycatch remains a problem even in otherwise well-managed fisheries
   - Sharks, turtles, marine mammals
 
 - Static spatial protections may struggle in a changing climate
 
 - Goal at OSU/ODFW: **Theory and evidence for reducing bycatch of threatened species**
-  - Simulating Social-Ecological Systems with  [`marlin`](https://danovando.github.io/marlin/)
+  - [`marlin`](https://danovando.github.io/marlin/)
   - Practical applications of dynamic ocean management
 
 ].pull-right[
 
-.center[![:scale 100%](`r file.path(img_path,"pons.png")`)]
+.center[![:scale 90%](`r file.path(img_path,"pons.png")`)]
 
 
 ]
+
+---
+
+# `marlin`
+
+.center[![:scale 90%](`r file.path(img_path,"marlin.jpg")`)]
+
 
 ---
 
@@ -1102,6 +1113,15 @@ Given a catch history and a population model...
 # Simulating Social-Ecological Systems with  [`marlin`](https://danovando.github.io/marlin/)
 
 .center[![:scale 80%](https://danovando.github.io/marlin/reference/figures/README-unnamed-chunk-10-1.png)]
+
+
+---
+
+
+
+# Simulating Social-Ecological Systems with  [`marlin`](https://danovando.github.io/marlin/)
+
+.center[![:scale 80%](`r file.path(img_path, "marlin2.jpg")`)]
 
 
 ---
