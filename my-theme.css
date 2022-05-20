@@ -1,6 +1,8 @@
 .title-slide {
-  background-image: url(imgs/title.jpg);
+  background-image: url(imgs/title2.jpeg);
   background-size: cover;
+  vertical-align: bottom !important; 
+  text-align: left !important;
 }
 .title-slide .remark-slide-number {
   display: none;

@@ -114,7 +114,7 @@ Assessment science largely focused on two key questions
 
 ].pull-right[
 
-![:scale 75%](`r file.path(img_path,"IMG_1664.JPG")`)
+![:scale 90%](`r file.path(img_path,"IMG_1664.JPG")`)
 
 ]
 ---
@@ -130,7 +130,7 @@ Assessment science largely focused on two key questions
 
 ].pull-right[
 
-![:scale 75%](`r file.path(img_path,"IMG_1664.JPG")`)
+![:scale 90%](`r file.path(img_path,"IMG_1664.JPG")`)
 
 
 ]
@@ -150,7 +150,7 @@ Assessment science largely focused on two key questions
 
 ].pull-right[
 
-![:scale 75%](`r file.path(img_path,"IMG_1664.JPG")`)
+![:scale 90%](`r file.path(img_path,"IMG_1664.JPG")`)
 
 ]
 
@@ -165,12 +165,17 @@ Assessment science largely focused on two key questions
 Two general options
 
   1. Conduct fishery-independent surveys
+    
     - Research trawls, acoustics, visual surveys, etc.
+    
     - Accurate (hopefully) but expensive
     
   2. Depend on data from the fishery
+   
     - Fisheries captures
+   
     - Catch-per-unit-effort
+   
     - Cheaper but often biased
 
 
@@ -182,15 +187,20 @@ Two general options
 Ideally, stock assessments fit a **population dynamics** model
     
   - Births
+  
   - Deaths
+  
   - Growth
 
 
 using  fishery **dependent** and **independent** data
 
 These models estimate **stock status** relative to **reference points**
+  
   - Unfished biomass
+  
   - Biomass that would maximize long-term catch
+  
   - Sustainability of fishing effort
 
 ---
@@ -237,7 +247,7 @@ We do have data on **catches**
 
 ].pull-right[
 
-.center[![:scale 75%](`r file.path(img_path,"mindaroo.png")`)]
+.center[![:scale 90%](`r file.path(img_path,"mindaroo.png")`)]
 
 
 ]
@@ -280,11 +290,13 @@ Pella-Tomlinson surplus production model with process error
 
 
 $$B_{t + 1} = \left(B_{t} + B_{t}\frac{r}{m - 1}\left(1 - \left(\frac{B_t}{K}\right)^{m- 1}\right) - c_t\right)p_t$$
-$$log(p_t) \sim {N}\left(-\sigma_{proc}^2/2,\sigma_{proc}\right)$$
+$$log(p_t) \sim {N}\left(\frac{-\sigma_{proc}^2}{2},\sigma_{proc}\right)$$
 
 Can... 
   - Run as a catch-only model
+  
   - Incorporate subjective or empirical priors on stock status
+  
   - Fit to abundance index if available
 
 
@@ -314,7 +326,7 @@ A good model should be able to **learn** something about stock status when confr
 ---
 
 
-#  Catches Don't Tell Us Status
+#  Catches Don't Tell Us (much) About Status
 --
 
 .center[![:scale 75%](`r file.path(img_path,"nothing_learned_plot.png")`)]
@@ -326,11 +338,15 @@ A good model should be able to **learn** something about stock status when confr
 # Moving Beyond Catch-Only
 
 - We can't **infer** stock status based on catch alone
+  
   - We can predict some...
 
 - There's a lot of data between "catch-only" and "full integrated stock assessment"
+  
   - Effort reconstructions
+  
   - Strength of fisheries management
+  
   - Intensity of trawling
   
   Using `sraplus`, we tested the ability of different combinations of **broadly available** data to say something useful about the status of fisheries
@@ -375,13 +391,17 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 # Little Improvement from <br> Regional Application
 
 - On average, catch-only 25% better than a random guess
+  
   - But, wrong status category 57% of the time...
 
 - Augmenting with additional data helps some
+  
   - Modest reductions in error and bias
+  
   - Better at fishing mortality rates
 
-- But estimates have substantial **error** and **bias**
+- Estimates have substantial **error** and **bias**
+  
   - Out hope might be uncertain but unbiased...
 
 ---
@@ -443,12 +463,17 @@ class: center, middle, inverse
 Ecosystem-based management increasingly asked to meet needs of environment and society. 
 
 Protected areas a big part of this
+  
   - Protect 30% of land and water in the coming decade.
+  
   - Up from single digits in global seas now
 
 Social-ecological systems are highly complex
+  
   - Spatial-temporal dynamics
+  
   - Species interactions
+  
   - Human behavior
   
 Makes *predicting* and *assessing* the performance of protected areas harder than you might think. 
@@ -464,7 +489,9 @@ Makes *predicting* and *assessing* the performance of protected areas harder tha
 - Early protected areas focused on providing refuge from the outside world
 
 - Protection has wider impacts
+  
   - "spillover" of adult or larval organisms
+  
   - Displacement of human activities 
 
 - This spillover both allows MPAs to provide wider benefits, but also poses major challenges. 
@@ -473,7 +500,7 @@ Makes *predicting* and *assessing* the performance of protected areas harder tha
 
 ].pull-right[
 
-.center[![:scale 75%](imgs/IMG_1679.JPG)]
+.center[![:scale 90%](imgs/IMG_1679.JPG)]
 
 ]
 
@@ -650,7 +677,7 @@ $$\mathbf{B^s} \sim N(\beta_r,\sigma_r)$$
 
 ].pull-right[
 
-.center[![:scale 80%](imgs/IMG_2947.JPG)]
+.center[![:scale 90%](imgs/IMG_2947.JPG)]
 
 ]
 
@@ -688,7 +715,7 @@ class: center, middle, inverse
 ]
 .pull-right[
 
-.center[![:scale 75%](`r file.path(img_path,"IMG_3602.jpg")`)]
+.center[![:scale 90%](`r file.path(img_path,"IMG_3602.jpg")`)]
 
 ]
 
@@ -776,7 +803,7 @@ class: center, middle, inverse
 - Goal at OSU/ODFW: **Collaborative research forecasting social-ecological systems**
 ].pull-right[
 
-.center[![:scale 80%](`r file.path(img_path,"IMG_6319.jpg")`)]
+.center[![:scale 90%](`r file.path(img_path,"IMG_6319.jpg")`)]
 
 ]
 ---
@@ -800,10 +827,11 @@ class: center, middle, inverse
 
 - Open and reproducible code 
   - Facilitates collaboration
+  
   - Improves science
 
 
-.center[**Excited to help solve terrestrial and aquatic environmental problems as part of OSU/ODFW community**]
+.center[**Excited to help solve environmental problems as part of OSU/ODFW community**]
 
 
 ].pull-right[
@@ -818,29 +846,31 @@ class: center, middle, inverse
 
 
 
-# Thank You!
+# Questions?
 
 .pull-left[
-Questions?
 
-slides: [https://danovando.github.io/osu-seminar/slides](https://danovando.github.io/osu-seminar/slides)
+**slides:** <br>
 
-email: danovan@uw.edu
+[danovando.github.io/osu-seminar/slides](https://danovando.github.io/osu-seminar/slides)
 
-website: [danovando.com](https://www.weirdfishes.blog/)
+**email:** danovan@uw.edu
+
+**website:** [danovando.com](https://www.weirdfishes.blog/)
+
+**twitter:** [@danovand0](https://twitter.com/DanOvand0)
 
 
-<a href="https://twitter.com/danovand0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @danovand0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-### Funding
+#### Funding
+  
   - Assessment: Food and Agriculture Organization of the United Nations
+  
   - Protected Areas: NOAA Sea Grant Population and Ecosystem Dynamics Fellowship
 
 
 ].pull-right[
 
-.center[![:scale 80%](`r file.path(img_path,"squats.jpg") `)]
+.center[![:scale 90%](`r file.path(img_path,"squats.jpg") `)]
 
 
 ]
