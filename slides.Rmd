@@ -1,13 +1,13 @@
 ---
 title: "Assessing, Managing, and Forecasting Social-Ecological Systems"
 author: "Dan Ovando"
-institute: "University of California, Davis Research Seminar"
-date: "2022/02/25"
+institute: "OSU/ODFW Research Seminar"
+date: "2022/05/24"
 output:
   xaringan::moon_reader:
     lib_dir: libs
     seal: true
-    self_contained: false
+    self_contained: true
     css: [default-fonts,default, my-theme.css]
     nature:
       highlightStyle: github
@@ -94,7 +94,7 @@ class: center, middle, inverse
 
 ## 2. Effects of Protected Areas
 
-## 3. Vision at UC Davis
+## 3. Vision at OSU/ODFW
 
 ---
 
@@ -527,10 +527,10 @@ Makes *predicting* and *assessing* the performance of protected areas harder tha
 
 # Population-Level Effects of MPAs
 
-<!-- .center[![:scale 70%](`r file.path(img_path,"bio_anim.gif")`)] -->
+.center[![:scale 70%](`r file.path(img_path,"bio_anim.gif")`)]
 
 
-```{r, out.width="100%", fig.align="center", eval = TRUE}
+```{r, out.width="100%", fig.align="center", eval = FALSE}
 knitr::include_graphics(file.path(img_path,"bio_anim.gif"))
 ```
 
@@ -542,10 +542,10 @@ Relatively sedentary adults, widely dispersed larvae with post-settlement densit
 # Population-Level Effects of MPAs
 
 
-<!-- .center[![:scale 70%](`r file.path(img_path,"fleet_anim.gif")`)] -->
+.center[![:scale 70%](`r file.path(img_path,"fleet_anim.gif")`)]
 
 
-```{r, out.width="100%", fig.align="center", eval=TRUE}
+```{r, out.width="100%", fig.align="center", eval=FALSE}
 knitr::include_graphics(file.path(img_path,"fleet_anim.gif"))
 ```
 
@@ -659,7 +659,7 @@ $$\mathbf{B^s} \sim N(\beta_r,\sigma_r)$$
 
 class: center, middle, inverse
 
-# Vision at UC Davis
+# Vision at OSU/ODFW
 
 ---
 
@@ -670,7 +670,7 @@ class: center, middle, inverse
 
 ---
 
-# Fishery Impacts of Protected Areas
+# Social-Ecological Impacts of Protected Areas
 
 .pull-left[
 - Ecosystem-based management includes impacts of policies on **people**
@@ -681,8 +681,8 @@ class: center, middle, inverse
 
 - Surprisingly limited empirical evidence
 
-- Goal at UC Davis: **Empirical research on the fishery impacts of MPAs**
-  - Focus on California
+- Goal at OSU/COMES: **Empirical research on the impacts of MPAs**
+  - Focus on Oregon & California Current
   - Applications globally
 
 ]
@@ -694,13 +694,10 @@ class: center, middle, inverse
 
 ---
 
-# Fishery Impacts of  Protected Areas
+# Social-Ecological Impacts of Protected Areas
 
 
 .center[![:scale 100%](https://danovando.github.io/dissertation/thesis_files/figure-html/catch-effects-1.png)]
-
-
-
 
 
 ---
@@ -709,15 +706,16 @@ class: center, middle, inverse
 
 .pull-left[
 
-- Fisheries management has had many successes
+- Fisheries management has had successes
 
 - Bycatch remains a problem even in otherwise well-managed fisheries
   - Sharks, turtles, marine mammals
 
 - Static spatial protections may struggle in a changing climate
 
-- Goal at UC Davis: **Theory and evidence for reducing bycatch of threatened species**
+- Goal at OSU/ODFW: **Theory and evidence for reducing bycatch of threatened species**
   - Simulating Social-Ecological Systems with  [`marlin`](https://danovando.github.io/marlin/)
+  - Practical applications of dynamic ocean management
 
 ].pull-right[
 
@@ -727,6 +725,41 @@ class: center, middle, inverse
 ]
 
 ---
+
+# West Coast Groundfish
+
+.pull-left[
+
+- Groundfish serve critical ecological, cultural, and economic roles
+
+- Interesting assessment and management challenges
+  - Range of life history, data availability, fishery dynamics
+  
+  - Spatial assessment and management
+  
+  - Economic indicators in stock assessment
+  
+  - Modern monitoring tools
+
+
+].pull-right[
+
+
+]
+
+
+
+---
+
+
+# West Coast Groundfish
+
+
+![](https://danovando.github.io/dissertation/thesis_files/figure-html/cs2-1.png)
+
+---
+
+
 
 # Forecasting Social-Ecological Systems
 
@@ -740,7 +773,7 @@ class: center, middle, inverse
 
 - Particularly as we plan ecosystem management under a changing climate
 
-- Goal at UC Davis: **Collaborative research forecasting social-ecological systems**
+- Goal at OSU/ODFW: **Collaborative research forecasting social-ecological systems**
 ].pull-right[
 
 .center[![:scale 80%](`r file.path(img_path,"IMG_6319.jpg")`)]
@@ -770,7 +803,7 @@ class: center, middle, inverse
   - Improves science
 
 
-.center[**Excited to help solve terrestrial and aquatic environmental problems as part of UC Davis community**]
+.center[**Excited to help solve terrestrial and aquatic environmental problems as part of OSU/ODFW community**]
 
 
 ].pull-right[
@@ -790,7 +823,7 @@ class: center, middle, inverse
 .pull-left[
 Questions?
 
-slides: [https://danovando.github.io/davis-seminar/slides](https://danovando.github.io/davis-seminar/slides)
+slides: [https://danovando.github.io/osu-seminar/slides](https://danovando.github.io/osu-seminar/slides)
 
 email: danovan@uw.edu
 
