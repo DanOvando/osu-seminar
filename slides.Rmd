@@ -140,7 +140,9 @@ Assessment science largely focused on two key questions
 .pull-left[
 Assessment science largely focused on two key questions
 
-1. How many fish are there?
+
+1. How many fish **are there**?
+
 
 ].pull-right[
 
@@ -158,9 +160,13 @@ Assessment science largely focused on two key questions
 .pull-left[
 Assessment science largely focused on two key questions
 
-1. How many fish are there?
 
-2. How many fish can we catch?
+
+1. How many fish **are there**?
+
+
+
+2. How many fish **can we catch**?
 
 ].pull-right[
 
@@ -244,6 +250,9 @@ We do have data on **catches**
 
 .center[![:scale 80%](`r file.path(img_path,"fao.png")`)]
 
+
+???
+mention abundance indices
 ---
 
 
@@ -272,13 +281,15 @@ We do have data on **catches**
 # Assessing Data-Limited Fisheries
 .pull-left[
 
-Our Questions: 
+### Our Questions: 
 
-1. How well do catch-only models work?
+
+
+1. **How well do catch-only models work?**
   
   - Spoiler: Not very well.
 
-2. Can we make them better?
+2. **Can we make them better?**
   
   - Spoiler:  Not without investment in new data
 
@@ -323,7 +334,7 @@ What do these catch histories suggest about stock status?
 
 --
 
-.center[![:scale 60%](`r file.path(img_path,"catches.png")`)]
+.center[![:scale 70%](`r file.path(img_path,"catches.png")`)]
 
 
 
@@ -369,9 +380,9 @@ A good model should be able to **learn** something about stock status when confr
 
 # Example: Swept Area Ratio
 
-Logic is simple: places trawled more often might have higher fishing mortality 
+Places with heavy trawling are likely to have higher fishing mortality 
 
-.center[![:scale 50%](`r file.path(img_path,"sar.png")`)]
+.center[![:scale 65%](`r file.path(img_path,"sar.png")`)]
 
 .right[[Amoroso *et al* (2018)](http://www.pnas.org/content/early/2018/10/03/1802379115)]
 ---
@@ -404,9 +415,11 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 
 # Little Improvement from <br> Regional Application
 
+
+
 - On average, catch-only 25% better than a random guess
   
-  - But, wrong status category 57% of the time...
+  - But, **wrong status 57%** of the time...
 
 - Augmenting with additional data helps some
   
@@ -416,14 +429,14 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 
 - Estimates have substantial **error** and **bias**
   
-  - Out hope might be uncertain but unbiased...
+  - Our hope might be uncertain but unbiased...
 
 ---
 
 # 
 
 
-.top[.center[![:scale 100%](imgs/error-and-bias.png)]]
+.top[.center[![:scale 110%](imgs/error-and-bias.png)]]
 
 
 ???
@@ -446,7 +459,7 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 
 .pull-left[
 
-- Can't let the perfect be the enemy of the good
+- Can't let perfect be the enemy of good enough
 
 - Important to know how imperfect
   
@@ -488,9 +501,11 @@ Social-ecological systems are highly complex
   
   - Human behavior
   
-Makes *predicting* and *assessing* the performance of protected areas harder than you might think. 
+
 
 ???
+Makes *predicting* and *assessing* the performance of protected areas harder than you might think. 
+
 [Currently 26% MPA in US waters, 3% no-take MPAs](https://marineprotectedareas.noaa.gov/gallery/understanding-area-based-mgmt-in-us-waters.html)
 ---
 
@@ -543,7 +558,7 @@ Makes *predicting* and *assessing* the performance of protected areas harder tha
 - MPAs seem simple: 
   - *Less fishing, more fish*
 
-- Ample evidence of generically **more** inside MPAs than outside
+- Ample evidence of **more everything** inside MPAs than outside
 
 - Problem solved?
 
@@ -664,7 +679,7 @@ $$\mathbf{B^s} \sim N(\beta_r,\sigma_r)$$
 
 # Population-Level Effects of MPAs
 
-.center[![:scale 80%](`r file.path(img_path,"did.jpg")`)]
+.center[![:scale 85%](`r file.path(img_path,"did.jpg")`)]
 
 .right[[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)]
 
@@ -727,7 +742,7 @@ class: center, middle, inverse
 ]
 .pull-right[
 
-.center[![:scale 90%](`r file.path(img_path,"IMG_3602.jpg")`)]
+.center[![:scale 80%](`r file.path(img_path,"IMG_3602.jpg")`)]
 
 ]
 
@@ -834,21 +849,24 @@ class: center, middle, inverse
 
 ---
 
-# Collaboration and Open Science
+# Philosophy of Healthy Science
 
 .pull-left[
 
-- Social-ecological problems are **complex**
 
-- Require interdisciplinary collaboration to **solve**
+Social-ecological problems are **complex**
 
-- Open and reproducible code 
-  - Facilitates collaboration
+**Solving** them requires
   
-  - Improves science
+  - Open and reproducible science
+  
+  - Interdisciplinary collaboration
+  
+  - Diverse teams
+  
 
+.center[**I'm excited to help support sustainable fisheries and healthy ecosystems as part of OSU/ODFW community**]
 
-.center[**Excited to help solve environmental problems as part of OSU/ODFW community**]
 
 
 ].pull-right[
@@ -856,6 +874,10 @@ class: center, middle, inverse
 .center[![](imgs/IMG_0526.jpg)]
 
 ]
+
+??? 
+
+what we do is important, and so is how we do it
 
 
 
@@ -1029,14 +1051,14 @@ For those not impressed by simulations, here are some real world data
 
 # Forecasting Salmon by Age Group
 
-.center[![:scale 55%](`r file.path(img_path,"sock.jpg")`)]
+.center[![:scale 80%](`r file.path(img_path,"sock.jpg")`)]
 
 ---
 
 
 # Forecasting with Ensembles
 
-.center[![:scale 55%](`r file.path(img_path,"ens.jpg")`)]
+.center[![:scale 80%](`r file.path(img_path,"ens.jpg")`)]
 
 
 ---
@@ -1132,5 +1154,14 @@ Given a catch history and a population model...
 
 ---
 
+# What Is an MPA?
 
+.center[![:scale 80%](`r file.path(img_path, "mpa1.jpg")`)]
+
+
+---
+
+# What Is an MPA?
+.center[![:scale 80%](`r file.path(img_path, "mpa1.jpg")`)]
+---
 
