@@ -791,9 +791,12 @@ class: center, middle, inverse
 
 - Groundfish serve critical ecological, cultural, and economic roles
 
-- Interesting assessment and management challenges
-  - Range of life history, data availability, fishery dynamics
+- Range of assessment and management challenges
   
+  - diverse life history, data availability, fishery dynamics
+  
+- Areas of research at OSU/ODFW
+
   - Spatial assessment and management
   
   - Economic indicators in stock assessment
@@ -802,6 +805,8 @@ class: center, middle, inverse
 
 
 ].pull-right[
+
+.center[![:scale 90%](`r file.path(img_path,"boats.png")`)]
 
 
 ]
