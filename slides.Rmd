@@ -47,6 +47,8 @@ options(htmltools.dir.version = FALSE)
 img_path <- here('imgs')
 ```
 
+
+
 # A Quantiative Fisheries Ecologist
 
 
@@ -124,59 +126,27 @@ class: center, middle, inverse
 
 ---
 
-# Fisheries Science
-
-.center[**Understanding and managing fisheries systems**]
-
-.pull-left[
-Assessment science largely focused on two key questions
-
-
-
-].pull-right[
-
-![:scale 90%](`r file.path(img_path,"IMG_1664.JPG")`)
-
-]
----
-
-# Fisheries Science
-
-.center[**Understanding and managing fisheries systems**]
-
-.pull-left[
-Assessment science largely focused on two key questions
-
-
-1. How many fish **are there**?
-
-
-].pull-right[
-
-![:scale 90%](`r file.path(img_path,"IMG_1664.JPG")`)
-
-
-]
-
----
-
-# Fisheries Science
-
-.center[**Understanding and managing fisheries systems**]
-
-.pull-left[
+class: center, middle, inverse
 
 > Counting fish is just like counting trees, except they move and are invisible
 > `r tufte::quote_footer('---  John Shepherd (loosely)')`
 
+---
+
+
+
+
+# Fisheries Science
+
+.center[**Understanding and managing fisheries systems**]
+
+.pull-left[
 
 1. How many fish **are there**?
 
 2. How many fish **can we catch**?
 
---
-
-We answer this using **stock assessments**
+We answer these using **stock assessments**
   - Fishery dependent & independent data...
   - Confronted with population dynamics
   
@@ -300,7 +270,9 @@ Can...
 ---
 
 # What Can Catches Tell Us?
+
 --
+
 What do these catch histories suggest about stock status?
 
 
@@ -806,17 +778,11 @@ Social-ecological problems are **complex**
 
 
 
-].pull-right[
+] .pull-right[
 
 .center[![](imgs/IMG_0526.jpg)]
 
 ]
-
-??? 
-
-what we do is important, and so is how we do it
-
-
 
 ---
 
