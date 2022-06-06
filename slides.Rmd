@@ -16,9 +16,6 @@ output:
       beforeInit: "macros.js"
 ---
 
-```{r broadcast, echo=FALSE}
-xaringanExtra::use_broadcast()
-```
 
 ```{r xaringanExtra-freezeframe, echo=FALSE}
 
@@ -92,15 +89,11 @@ class: center, middle, inverse
 
 ---
 
-# Why Bayes?
+# Basics of Bayes
 --
 
-![](https://imgs.xkcd.com/comics/bridge.png)
+<!-- ![](https://imgs.xkcd.com/comics/bridge.png) -->
 
-
-Bayesian methods... 
-
---
 
 
 - Provide **posterior probability distributions** for parameters, informed by **priors** 
@@ -109,7 +102,7 @@ Bayesian methods...
   
 - Give us a framework for incorporating **prior knowledge**
   
-- Suited to **complex structures**
+- Suited to **complex data generating processes**
 
 ---
 
@@ -172,15 +165,21 @@ Assessment science largely focused on two key questions
 .center[**Understanding and managing fisheries systems**]
 
 .pull-left[
-Assessment science largely focused on two key questions
 
+> Counting fish is just like counting trees, except they move and are invisible
+> `r tufte::quote_footer('---  John Shepherd (loosely)')`
 
 
 1. How many fish **are there**?
 
-
-
 2. How many fish **can we catch**?
+
+--
+
+We answer this using **stock assessments**
+  - Fishery dependent & independent data...
+  - Confronted with population dynamics
+  
 
 ].pull-right[
 
@@ -190,54 +189,6 @@ Assessment science largely focused on two key questions
 
 ---
 
-
-# How Many Fish Are There?
-
-> Counting fish is just like counting trees, except they move and are invisible
-> `r tufte::quote_footer('---  John Shepherd (loosely)')`
-
-Two general options
-
-  1. Conduct fishery-independent surveys
-    
-    - Research trawls, acoustics, visual surveys, etc.
-    
-    - Accurate (hopefully) but expensive
-    
-  2. Depend on data from the fishery
-   
-    - Fisheries captures
-   
-    - Catch-per-unit-effort
-   
-    - Cheaper but often biased
-
-
----
-
-# Stock Assessments
-
-
-Ideally, stock assessments fit a **population dynamics** model
-    
-  - Births
-  
-  - Deaths
-  
-  - Growth
-
-
-using  fishery **dependent** and **independent** data
-
-These models estimate **stock status** relative to **reference points**
-  
-  - Unfished biomass
-  
-  - Biomass that would maximize long-term catch
-  
-  - Sustainability of fishing effort
-
----
 
 # A Tale of Two Fisheries
 
@@ -276,11 +227,14 @@ mention abundance indices
 
 .pull-left[
 
-- Catch-only models increasingly being used to assess and manage fisheries
+- Catch-only models increasingly used to assess and manage fisheries
 
-- Many types, but share common feature of **inferring** or **predicting** stock status based on attributes of **catch history**
+- Commonly **infer** or **predict** stock status based on attributes of **catch history**
 
-- Vigorous debate as to their performance. 
+- Performance vigorously debated
+  - "The best we can do" vs. "too uncertain to be helpful"
+
+![](https://media.springernature.com/w300/springer-static/image/art%3A10.1038%2F494303a/MediaObjects/41586_2013_Article_BF494303a_Figa_HTML.jpg?as=webp)
 
 ].pull-right[
 
@@ -292,7 +246,7 @@ mention abundance indices
 
 
 
-# Assessing Data-Limited Fisheries
+# Assessing Global Data-Limited Fisheries
 .pull-left[
 
 ### Our Questions: 
@@ -309,6 +263,9 @@ mention abundance indices
 
 ].pull-right[
 
+<br>
+<br>
+<br>
 .center[![:scale 100%](`r file.path(img_path,"two-fisheries.png")`)]
 
 
@@ -321,9 +278,9 @@ mention abundance indices
 
 
 
-# [`sraplus`](https://danovando.github.io/sraplus/)
+# A Flexible Assessment Model
 
-Core tool of our research: `sraplus`
+Core tool of our research:  [`sraplus`](https://danovando.github.io/sraplus/)
 
 Pella-Tomlinson surplus production model with process error
 
@@ -343,10 +300,10 @@ Can...
 ---
 
 # What Can Catches Tell Us?
-
+--
 What do these catch histories suggest about stock status?
 
---
+
 
 .center[![:scale 70%](`r file.path(img_path,"catches.png")`)]
 
@@ -354,19 +311,19 @@ What do these catch histories suggest about stock status?
 
 ---
 
-# Catch-Only `sraplus`
 
-A good model should be able to **learn** something about stock status when confronted with **data**
+#  Catches Don't Tell Us (much) About Status
 
---
 
-.center[![:scale 75%](`r file.path(img_path,"catch_status_plot.png")`)]
+.center[![:scale 75%](`r file.path(img_path,"nothing_learned_plot_a.png")`)]
 
+
+.right[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12637)]
 ---
 
 
+
 #  Catches Don't Tell Us (much) About Status
---
 
 .center[![:scale 75%](`r file.path(img_path,"nothing_learned_plot.png")`)]
 
@@ -481,9 +438,9 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
   
   - Catches don't really update priors
   
--  Even with new data, high levels of error and bias
+- Local data on institutions and lengths could help
 
-.center[**Understanding of global fisheries depends on better data, not better models**]
+.center[**Understanding data-limited fisheries depends on better data, not better models**]
 
 ].pull-right[
 
@@ -499,45 +456,23 @@ class: center, middle, inverse
 ---
 
 
-# Protected Areas
 
-Ecosystem-based management increasingly asked to meet needs of environment and society. 
-
-Protected areas a big part of this
-  
-  - Protect 30% of land and water in the coming decade.
-  
-  - Up from single digits in global seas now
-
-Social-ecological systems are highly complex
-  
-  - Spatial-temporal dynamics
-  
-  - Species interactions
-  
-  - Human behavior
-  
-
-
-???
-Makes *predicting* and *assessing* the performance of protected areas harder than you might think. 
-
-[Currently 26% MPA in US waters, 3% no-take MPAs](https://marineprotectedareas.noaa.gov/gallery/understanding-area-based-mgmt-in-us-waters.html)
----
 
 # Leaving the Walled Garden
 
 .pull-left[
 
-- Early protected areas focused on providing refuge from the outside world
-
+- Protected areas asked to play a growing role in **ecosystem-based management**
+  
+  - Protect 30% of land and water in the coming decade.
+  
+- Early protected areas refuges from the outside world
+  
 - Protection has wider impacts
   
   - "spillover" of adult or larval organisms
   
   - Displacement of human activities 
-
-- This spillover both allows MPAs to provide wider benefits, but also poses major challenges. 
 
 .center[**What effects do protected areas have on populations?**]
 
@@ -578,9 +513,11 @@ Makes *predicting* and *assessing* the performance of protected areas harder tha
 
 - Problem solved?
 
-- Few marine populations contained entirely in MPAs
+--
 
-- What do we do when the **treatment** affects the **control**
+  - Few marine populations contained entirely in MPAs
+
+  - What do we do when the **treatment** affects the **control**
 
 
 ].pull-right[
@@ -695,9 +632,18 @@ $$\mathbf{B^s} \sim N(\beta_r,\sigma_r)$$
 
 # Population-Level Effects of MPAs
 
-.center[![:scale 85%](`r file.path(img_path,"did.jpg")`)]
+.center[![:scale 82%](`r file.path(img_path,"a_priori_plot.png")`)]
 
-.right[[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)]
+.left[[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)]
+
+---
+
+
+# Population-Level Effects of MPAs
+
+.center[![:scale 82%](`r file.path(img_path,"mpa_effect_plot.png")`)]
+
+.left[[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)]
 
 ---
 
@@ -740,37 +686,7 @@ class: center, middle, inverse
 
 ---
 
-# Social-Ecological Impacts of Protected Areas
 
-.pull-left[
-- Ecosystem-based management includes impacts of policies on **people**
-
-- The bigger the protected area...
-  - The more likely substantial conservation success
-  - The less likely benefits to fisheries
-
-- Surprisingly limited empirical evidence
-
-- Goal at OSU/ODFW: **Empirical research on the impacts of MPAs**
-  - Focus on Oregon & California Current
-  - Applications globally
-
-]
-.pull-right[
-
-.center[![:scale 80%](`r file.path(img_path,"IMG_3602.jpg")`)]
-
-]
-
----
-
-# Social-Ecological Impacts of Protected Areas
-
-
-.center[![:scale 100%](https://danovando.github.io/dissertation/thesis_files/figure-html/catch-effects-1.png)]
-
-
----
 
 # Reducing Bycatch
 
@@ -1186,3 +1102,117 @@ Given a catch history and a population model...
 .center[![:scale 80%](`r file.path(img_path, "mpa1.jpg")`)]
 ---
 
+# Catch-Only `sraplus`
+
+A good model should be able to **learn** something about stock status when confronted with **data**
+
+--
+
+.center[![:scale 75%](`r file.path(img_path,"catch_status_plot.png")`)]
+
+---
+
+# Science of Protected Areas
+
+
+Protected areas asked to play a growing role in **ecosystem-based management**
+  
+  - 30% of land and water in the coming decade.
+  
+  - Up from single digits in global seas now
+
+Achieving *ecological* and *social* benefits through protected areas complicated by
+
+  - Spatial-temporal dynamics
+  
+  - Species interactions
+  
+  - Human behavior
+  
+
+
+???
+Makes *predicting* and *assessing* the performance of protected areas harder than you might think. 
+
+[Currently 26% MPA in US waters, 3% no-take MPAs](https://marineprotectedareas.noaa.gov/gallery/understanding-area-based-mgmt-in-us-waters.html)
+---
+
+# Social-Ecological Impacts of Protected Areas
+
+.pull-left[
+- Ecosystem-based management includes impacts of policies on **people**
+
+- The bigger the protected area...
+  - The more likely substantial conservation success
+  - The less likely benefits to fisheries
+
+- Surprisingly limited empirical evidence
+
+- Goal at OSU/ODFW: **Empirical research on the impacts of MPAs**
+  - Focus on Oregon & California Current
+  - Applications globally
+
+]
+.pull-right[
+
+.center[![:scale 80%](`r file.path(img_path,"IMG_3602.jpg")`)]
+
+]
+
+---
+
+# Social-Ecological Impacts of Protected Areas
+
+
+.center[![:scale 100%](https://danovando.github.io/dissertation/thesis_files/figure-html/catch-effects-1.png)]
+
+
+---
+
+# How Many Fish Are There?
+
+> Counting fish is just like counting trees, except they move and are invisible
+> `r tufte::quote_footer('---  John Shepherd (loosely)')`
+
+Two general options
+
+  1. Conduct fishery-independent surveys
+    
+    - Research trawls, acoustics, visual surveys, etc.
+    
+    - Accurate (hopefully) but expensive
+    
+  2. Depend on data from the fishery
+   
+    - Fisheries captures
+   
+    - Catch-per-unit-effort
+   
+    - Cheaper but often biased
+
+
+---
+
+# How Many Can we Catch?
+
+
+To contextualize numbers, we fit **population dynamics** models
+    
+  - Births
+  
+  - Deaths
+  
+  - Growth
+
+
+using ideally fishery **dependent** and **independent** data
+
+These models estimate **stock status** relative to **reference points**
+  
+  - Unfished biomass
+  
+  - Biomass that would maximize long-term catch
+  
+  - Sustainability of fishing effort
+
+---
