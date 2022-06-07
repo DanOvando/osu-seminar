@@ -2,7 +2,7 @@
 title: "Assessing, Managing, and Forecasting Social-Ecological Systems"
 author: "Dan Ovando"
 institute: "OSU/ODFW Research Seminar"
-date: "2022/05/24"
+date: "2022/06/09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -485,9 +485,7 @@ class: center, middle, inverse
 
 - Problem solved?
 
---
-
-  - Few marine populations contained entirely in MPAs
+  - Fish and Fishers move
 
   - What do we do when the **treatment** affects the **control**
 
@@ -703,10 +701,9 @@ class: center, middle, inverse
 
   - Spatial assessment and management
   
-  - Economic indicators in stock assessment
-  
   - Modern monitoring tools
 
+  - Economic indicators in stock assessment
 
 ].pull-right[
 
