@@ -72,6 +72,8 @@ Using ...
   - Simulation modeling
  
   - Open and reproducible science
+  
+  - Null results?
 
 
 ???
@@ -92,17 +94,22 @@ class: center, middle, inverse
 ---
 
 # Basics of Bayes
---
+
 
 <!-- ![](https://imgs.xkcd.com/comics/bridge.png) -->
 
 
+$$p(parameters|data) = \frac{p(data|parameters) \times p(parameters)}{p(data)}$$
+
+<br>
+<br>
+<br>
+
+- Gives us a framework for incorporating **prior knowledge**
 
 - Provide **posterior probability distributions** for parameters, informed by **priors** 
   
   - "What was the probability that the protected area increased biomass by more than 10%"
-  
-- Give us a framework for incorporating **prior knowledge**
   
 - Suited to **complex data generating processes**
 
@@ -141,6 +148,8 @@ class: center, middle, inverse
 .center[**Understanding and managing fisheries systems**]
 
 .pull-left[
+
+### Assessment Science
 
 1. How many fish **are there**?
 
@@ -356,14 +365,23 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
 ---
 
 
-# 
+# Regional Error
 
 
-.top[.center[![:scale 110%](imgs/error-and-bias.png)]]
+.top[.center[![:scale 85%](imgs/error.png)]]
 
 
-???
-.right[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12593)]
+.left[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12593)]
+
+---
+
+# Regional Bias
+
+
+.top[.center[![:scale 85%](imgs/bias.png)]]
+
+
+.left[[Ovando *et al.* (2021)](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12593)]
 
 ---
 
@@ -381,7 +399,7 @@ The **posterior prediction** based on trawling intensity becomes **prior** for `
   
   - Better at fishing mortality rates
 
-- Estimates have substantial **error** and **bias**
+- Estimates still have substantial **error** and **bias**
   
   - Our hope might be uncertain but unbiased...
 
