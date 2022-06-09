@@ -456,7 +456,7 @@ class: center, middle, inverse
   
   - Protect 30% of land and water in the coming decade.
   
-- Early protected areas refuges from the outside world
+- Modern protected areas first seen as refuges from the outside world
   
 - Protection has wider impacts
   
@@ -464,13 +464,19 @@ class: center, middle, inverse
   
   - Displacement of human activities 
 
-.center[**What effects do protected areas have on populations?**]
+
 
 ].pull-right[
 
 .center[![:scale 90%](imgs/IMG_1679.JPG)]
 
 ]
+
+---
+
+class: center, middle, inverse
+
+### What effects do protected areas have on populations?
 
 ---
 
