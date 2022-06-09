@@ -674,6 +674,35 @@ class: center, middle, inverse
 
 ---
 
+# Forecasting Social-Ecological Systems
+
+.pull-left[
+
+
+- Quantitative ecology often focuses on explaining what we **observe**
+  - Good identification but low $R^2$
+
+-  We also need to consider how well we can **forecast**
+
+- Particularly as we plan ecosystem management under a changing climate
+
+- Goal at OSU/ODFW: **Collaborative research forecasting social-ecological systems**
+].pull-right[
+
+.center[![:scale 90%](`r file.path(img_path,"IMG_6319.jpg")`)]
+
+]
+---
+
+# Forecasting Social-Ecological Systems
+
+.center[![:scale 70%](`r file.path(img_path,"bb.jpg")`)]
+
+
+.left[[Ovando *et al.* (2022)](https://cdnsciencepub.com/doi/10.1139/cjfas-2021-0287)]
+
+---
+
 
 
 # Reducing Bycatch
@@ -704,6 +733,8 @@ class: center, middle, inverse
 
 
 ---
+
+
 
 # West Coast Groundfish
 
@@ -744,34 +775,6 @@ class: center, middle, inverse
 
 
 
-# Forecasting Social-Ecological Systems
-
-.pull-left[
-
-
-- Quantitative ecology often focuses on explaining what we **observe**
-  - Good identification but low $R^2$
-
--  We also need to consider how well we can **forecast**
-
-- Particularly as we plan ecosystem management under a changing climate
-
-- Goal at OSU/ODFW: **Collaborative research forecasting social-ecological systems**
-].pull-right[
-
-.center[![:scale 90%](`r file.path(img_path,"IMG_6319.jpg")`)]
-
-]
----
-
-# Forecasting Social-Ecological Systems
-
-.center[![:scale 70%](`r file.path(img_path,"bb.jpg")`)]
-
-
-.left[[Ovando *et al.* (2022)](https://cdnsciencepub.com/doi/10.1139/cjfas-2021-0287)]
-
----
 
 # Philosophy of Healthy Science
 
